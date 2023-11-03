@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown</title>
+</head>
+<body>
+  <p id="countdown">100</p>
+
+  <script>
+    var count = 100;
+    var countdownElement = document.getElementById('countdown');
+
+    function countdown() {
+      countdownElement.textContent = count;
+      if (count > 0) {
+        count--;
+        setTimeout(countdown, 1000);
+      }
+    }
+    window.onload = countdown;
+  </script>
+</body>
+</html>
