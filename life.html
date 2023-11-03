@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown to Diwali</title>
+</head>
+<body>
+  <p id="countdown"></p>
+
+  <script>
+    function countdown() {
+      var countdownDisplay = document.getElementById('countdown');
+
+      var count = 10;
+
+      var countdownTimer = setInterval(function() {
+        if (count >= 0) {
+          countdownDisplay.innerText = count;
+          count--;
+        } else {
+          clearInterval(countdownTimer);
+          countdownDisplay.innerText = "...Big fan!!";
+        }
+      }, 1000);
+    }
+
+    countdown();
+  </script>
+</body>
+</html>

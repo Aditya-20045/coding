@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+  .block {
+    background: gray;
+    padding: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
